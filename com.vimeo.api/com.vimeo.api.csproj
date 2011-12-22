@@ -52,10 +52,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request.cs" />
+    <Compile Include="simple\Activity.cs" />
+    <Compile Include="simple\Album.cs" />
+    <Compile Include="simple\Channel.cs" />
+    <Compile Include="simple\Group.cs" />
     <Compile Include="simple\User.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
+    <Compile Include="simple\Video.cs" />
+    <Compile Include="VimeoException.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
