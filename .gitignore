@@ -1,0 +1,7 @@
+
+*.suo
+/TestResults
+/com.vimeo.api/bin
+/com.vimeo.api/obj
+/com.vimeo.tests/bin
+/com.vimeo.tests/obj
