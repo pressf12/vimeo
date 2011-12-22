@@ -32,8 +32,9 @@ namespace com.vimeo.api.tests
         [TestMethod]
         public void Users()
         {
-            // musicvideosanygenre group
-            var list = Group.Users("musicvideosanygenre");
+            // musicvideosanygenre group -> TIMES OUT??
+            // climaterealityproject
+            var list = Group.Users("climaterealityproject");
             Assert.IsNotNull(list);
             Assert.IsTrue(list.Count > 0);
         }

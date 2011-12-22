@@ -17,7 +17,7 @@ namespace com.vimeo.api.tests
     {
 
         [TestMethod]
-        public void Info()
+        public void GetInfo()
         {
             var user = User.Info(Configuration.GetKey("username"));
             Assert.IsNotNull(user);

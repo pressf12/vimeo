@@ -173,21 +173,21 @@ namespace com.vimeo.api.simple
             set;
         }
         
-        [JsonProperty("video_stats_number_of_likes")]
+        [JsonProperty("video_stats_number_of_likes", NullValueHandling=NullValueHandling.Ignore)]
         public int VideoStatsNumberOfLikes
         {
             get;
             set;
         }
-        
-        [JsonProperty("video_stats_number_of_plays")]
+
+        [JsonProperty("video_stats_number_of_plays", NullValueHandling = NullValueHandling.Ignore)]
         public int VideoStatsNumberOfPlays
         {
             get;
             set;
         }
-        
-        [JsonProperty("video_stats_number_of_comments")]
+
+        [JsonProperty("video_stats_number_of_comments", NullValueHandling = NullValueHandling.Ignore)]
         public int VideoStatsNumbeOfComments
         {
             get;

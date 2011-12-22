@@ -106,7 +106,7 @@ namespace com.vimeo.api.simple
         /// The date/time the video was uploaded on
         /// </summary>
         [JsonProperty("upload_date")]
-        public DateTime UploadDate
+        public string UploadDate
         {
             get;
             set;
@@ -155,8 +155,8 @@ namespace com.vimeo.api.simple
         /// <summary>
         /// # of views
         /// </summary>
-        [JsonProperty("stats_number_of_views")]
-        public int StatsNumberOfViews
+        [JsonProperty("stats_number_of_plays")]
+        public int StatsNumberOfPlays
         {
             get;
             set;
@@ -211,6 +211,16 @@ namespace com.vimeo.api.simple
             get;
             set;
         }
+
+        /// <summary>
+        /// Comma separated list of tags
+        /// </summary>
+        [JsonProperty("embed_privacy")]
+        public string EmbedPrivacy
+        {
+            get;
+            set;
+        }
         #endregion 
 
         #region // Data Access //
@@ -229,7 +239,7 @@ namespace com.vimeo.api.simple
                 throw new VimeoException();
             }
 
-            return JsonConvert.DeserializeObject<Video>(json);
+            return JsonConvert.DeserializeObject<Video>(json.Trim('[', ']'));
         }
 
         #endregion 

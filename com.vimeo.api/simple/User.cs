@@ -48,7 +48,7 @@ namespace com.vimeo.api.simple
         /// Is this user a staff member?
         /// </summary>
         [JsonProperty("is_staff")]
-        public bool IsStaff
+        public int IsStaff
         {
             get;
             set;
@@ -58,7 +58,7 @@ namespace com.vimeo.api.simple
         /// Is this user a Vimeo Plus member?
         /// </summary>
         [JsonProperty("is_plus")]
-        public bool IsPlus
+        public int IsPlus
         {
             get;
             set;
